@@ -1,0 +1,124 @@
+/* การเลือกโทนสี: ดำ, เทาเข้ม, น้ำตาลไหม้, และสีครีมเก่า (Parchment) */
+:root {
+    --bg-color: #1a1a1a;        /* พื้นหลังดำสนิทแบบนุ่มนวล */
+    --paper-color: #2c2c2c;     /* สีกล่องเนื้อหา */
+    --text-main: #d4c5b3;       /* สีฟอนต์ครีมจางๆ เหมือนกระดาษเก่า */
+    --text-dim: #8a7d6e;        /* สีเทาน้ำตาลสำหรับวันที่/ซับไตเติล */
+    --accent: #6b4e3d;          /* สีน้ำตาลไหม้สำหรับขอบหรือลิงก์ */
+    --border: 1px solid #3d3d3d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Courier New', Courier, monospace; /* ให้ฟอนต์แบบพิมพ์ดีด */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    border-left: var(--border);
+    border-right: var(--border);
+    padding: 40px;
+}
+
+header {
+    text-align: center;
+    border-bottom: var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Georgia', serif; /* ใช้ Serif สำหรับหัวข้อเพื่อความหรูหรา */
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    letter-spacing: 4px;
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.post {
+    margin-bottom: 60px;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    display: block;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.content {
+    border-left: 2px solid var(--accent);
+    padding-left: 20px;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+/* รูปโปรไฟล์แบบวงกลมหรือกรอบสี่เหลี่ยมคลาสสิก */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* หรือ 0% ถ้าอยากได้ทรงเหลี่ยม */
+    border: 1px solid var(--accent);
+    filter: sepia(30%) grayscale(50%); /* ปรับให้รูปดูเก่า */
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* รูปภาพในเนื้อหา */
+.post-image {
+    margin: 25px 0;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--paper-color);
+    /* ใส่ฟิลเตอร์ให้ภาพมืดและหม่นเข้ากับธีม */
+    filter: brightness(0.8) contrast(1.1) grayscale(20%);
+    transition: 0.5s;
+}
+
+.post-image img:hover {
+    filter: brightness(1); /* เมื่อเอาเมาส์ชี้ รูปจะชัดขึ้น */
+}
+
+/* คำบรรยายใต้ภาพ (Caption) */
+.caption {
+    font-size: 0.7rem;
+    font-style: italic;
+    color: var(--text-dim);
+    text-align: center;
+    margin-top: 8px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    margin-top: 100px;
+}
