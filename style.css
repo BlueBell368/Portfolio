@@ -7,7 +7,7 @@
     --accent: #6b4e3d;         
     --border: 1px solid #3d3d3d;
 }
-
+/* Comments */
 body {
     background-color: var(--bg-color);
     color: var(--text-main);
@@ -24,7 +24,7 @@ body {
     border-right: var(--border);
     padding: 40px;
 }
-
+/* Comments */
 header {
     text-align: center;
     border-bottom: var(--border);
