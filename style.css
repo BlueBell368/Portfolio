@@ -1,6 +1,6 @@
 /* (Parchment) */
 :root {
-    --bg-color: #2C3034;        
+    --bg-color: #2f4858;        
     --paper-color: #1a1a1a;     
     --text-main: #d4c5b3;       
     --text-dim: #8a7d6e;   
@@ -78,18 +78,18 @@ h2 {
     font-size: 1rem;
 }
 
-/* รูปโปรไฟล์แบบวงกลมหรือกรอบสี่เหลี่ยมคลาสสิก */
+
 .profile-img {
     width: 100px;
     height: 100px;
-    border-radius: 50%; /* หรือ 0% ถ้าอยากได้ทรงเหลี่ยม */
+    border-radius: 50%; 
     border: 1px solid var(--accent);
     filter: sepia(30%) grayscale(50%); 
     margin-bottom: 20px;
     object-fit: cover;
 }
 
-/* รูปภาพในเนื้อหา */
+
 .post-image {
     margin: 25px 0;
 }
